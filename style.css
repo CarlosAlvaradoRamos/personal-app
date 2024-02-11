@@ -1,0 +1,30 @@
+:root {
+	--color-one: #201116;
+	--color-two: #5B524E;
+	--color-three: #747D8C;
+	--color-four: #CED7E2;
+	--color-five: #F9F9F9;
+}
+
+* {
+	margin: 0;
+  	padding: 20px;
+	box-sizing: border-box;
+	font-family: 'Fira sans', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: var(--color-one);
+	color: var(--color-five);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+

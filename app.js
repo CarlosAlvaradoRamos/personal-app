@@ -35,23 +35,23 @@ window.addEventListener('load', () => {
 
                 const button_edit = document.createElement('button')
                 button_edit.classList.add('edit');
-                button_edit.innerText = 'edit';
+                button_edit.innerText = 'editar';
                 div_actions.appendChild(button_edit);
                 
                 const button_delete = document.createElement('button')
                 button_delete.classList.add('delete');
-                button_delete.innerText = 'delete';
+                button_delete.innerText = 'eliminar';
                 div_actions.appendChild(button_delete);
 
         task_input.value = '';
 
         button_edit.addEventListener('click', (e) => {
-            if (button_edit.innerText.toLowerCase() == 'edit') {
-                button_edit.innerText = 'save';
+            if (button_edit.innerText.toLowerCase() == 'editar') {
+                button_edit.innerText = 'guardar';
                 input_text.removeAttribute('readonly');
                 input_text.focus();
             } else {
-                button_edit.innerText = 'edit';
+                button_edit.innerText = 'editar';
                 input_text.setAttribute('readonly', 'readonly');
             };
         });
